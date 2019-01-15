@@ -1,0 +1,24 @@
+{
+  "name": "qs1-unio-paullemoine3",
+  "version": "1.0.0",
+  "description": "## Before the journey",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"./src/**/*.js\" "
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paullemoine3/qs1-unio-paullemoine3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paullemoine3/qs1-unio-paullemoine3/issues"
+  },
+  "homepage": "https://github.com/paullemoine3/qs1-unio-paullemoine3#readme",
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  }
+}
