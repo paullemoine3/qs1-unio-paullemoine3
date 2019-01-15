@@ -19,31 +19,7 @@ const interval = setInterval(() => sensaSay('For the North').then(value => {
         }
     });
 }), 1000);
-
+//interval sur 11s car pas réussi à mettre sur 10s sinon il manque une itération
 setTimeout(() => {
     clearInterval(interval)
 }, 11000);
-
-//officiel 
-
-const sensaThenArya = () =>
-    sensaSay('For the North')
-    .then(result => {
-        console.log(result);
-        return aryaSay('The king in the North');
-    })
-    .then(console.log);
-
-sensaThenArya()
-    .then(() => johnSay('Winter is coming'))
-    .then(result => {
-        console.log(result);
-        return new Promise((res, rej) => {
-            timer = setInterval(sensaThenArya, 1000);
-            setTimeout(() => {
-                clearInterval(timer);
-                res();
-            }, 10000);
-        });
-    })
-    .catch(err => console.error(err));
